@@ -17,14 +17,14 @@ In order to let platform like Ethereum/Qutm support zkSNARKs, we use Zokrates to
 
 Zokrates official manual can be found in [Here](https://zokrates.github.io/gettingstarted.html).
 
-#### One-line install
+### One-line install
 We provide a one-line install for Linux, MacOS and FreeBSD:
 
 ```bash
 curl -LSfs get.zokrat.es | sh
 ```
 
-#### Docker
+### Docker
 ZoKrates is available on Dockerhub.
 
 ```bash
@@ -34,7 +34,7 @@ docker run -ti zokrates/zokrates /bin/bash
 
 From there on, you can use the ```zokrates``` CLI.
 
-#### From source
+### From source
 You can build the container yourself from [source](https://github.com/ZoKrates/ZoKrates/) with the following commands:
 
 ```bash
