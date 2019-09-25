@@ -199,7 +199,7 @@ If the program execute successfully and return true, means the user is honest an
 
 ## About Qtum
 
-[Qtum](https://qtum.org/en) is compatible with the Bitcoin- and Ethereum ecosystems and aims at producing a variation of Bitcoin with Ethereum Virtual Machine (EVM) compatibility. 
+[Qtum](https://qtum.org/en) is compatible with the Bitcoin and Ethereum ecosystems and aims at producing a variation of Bitcoin with Ethereum Virtual Machine (EVM) compatibility. 
 
 Note that differently to Ethereum, the Qtum EVM is constantly backwards compatible. Pursuing a pragmatic design approach, Qtum employs industry use cases with a strategy comprising mobile devices. 
 
