@@ -1,0 +1,10 @@
+import "hashes/sha256/512bitPacked.code" as sha256packed
+
+def main(private field value, private field before, field valueHash, field beforeHash, field afterHash) -> (field):
+	priBefore = sha256packed([0, 0, 0, before])
+	priAfter = sha256packed([0, 0, 0, before+value])
+    field result = if(\
+    	priBefore[0] == beforeHash &&\
+    	priAfter[0] == afterHash \
+    ) then 1 else 0 fi
+    return result
