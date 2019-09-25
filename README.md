@@ -175,25 +175,25 @@ After that, users can find a file named ***verifier.sol*** in the folder. Then w
 
 ####Paste the code into the Remix
 
-![pic1](./pic/pic1.png)
+<img src="./pic/pic1.png" alt="pic1" style="zoom:50%;" />
 
 #### Compile it
 
-![pic2](./pic/pic2.png)
+<img src="./pic/pic2.png" alt="pic2" style="zoom:50%;" />
 
 #### Find Verifier Class and Delopy
 
-![pic3](./pic/pic3.png)
+<img src="./pic/pic3.png" alt="pic3" style="zoom:50%;" />
 
 #### Use VerifyTx to Execute Proof
 
-![pic4](./pic/pic4.png)
+<img src="./pic/pic4.png" alt="pic4" style="zoom:50%;" />
 
 #### Input the Parameters in Json and Verify
 
 If the program execute successfully and return true, means the user is honest and has pass the proof, if user is dishonest, the program won't pass.
 
-![pic5](./pic/pic5.png)
+<img src="./pic/pic5.png" alt="pic5" style="zoom:50%;" />
 
 ##About Qtum
 
