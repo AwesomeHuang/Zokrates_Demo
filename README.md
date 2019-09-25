@@ -3,7 +3,7 @@ A demo using Zokrates to build an encrypted transaction on Ethereum/Qtum based o
 
 > This is a proof-of-concept implementation. It has not been tested for production.
 
-##Zokrates Introduction
+## Zokrates Introduction
 
 [ZoKrates](https://github.com/Zokrates/ZoKrates) is a toolbox for zkSNARKs on Ethereum. It helps you use verifiable computation in your DApp, from the specification of your program in a high level language to generating proofs of computation to verifying those proofs in Solidity.
 
@@ -13,18 +13,18 @@ The goal of zero-knowledge proofs is for a *verifier* to be able to convince her
 
 In order to let platform like Ethereum/Qutm support zkSNARKs, we use Zokrates to generate the proof.
 
-##Zokrates Installation
+## Zokrates Installation
 
 Zokrates official manual can be found in [Here](https://zokrates.github.io/gettingstarted.html).
 
-####One-line install
+#### One-line install
 We provide a one-line install for Linux, MacOS and FreeBSD:
 
 ```bash
 curl -LSfs get.zokrat.es | sh
 ```
 
-####Docker
+#### Docker
 ZoKrates is available on Dockerhub.
 
 ```bash
@@ -34,7 +34,7 @@ docker run -ti zokrates/zokrates /bin/bash
 
 From there on, you can use the ```zokrates``` CLI.
 
-####From source
+#### From source
 You can build the container yourself from [source](https://github.com/ZoKrates/ZoKrates/) with the following commands:
 
 ```bash
@@ -44,9 +44,9 @@ cargo +nightly build --release
 cd target/release
 ```
 
-##Implementation
+## Implementation
 
-###Design
+### Design
 
 In this chapter we aim to give an overview of [zkSNARKs](https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof) from a practical viewpoint. We will treat the actual math as a black box but will try to develop some intuitions around how we can use them.
 
@@ -74,7 +74,7 @@ We are not going to hide the sender or receiver of transactions, but we’ll be 
 
 Thus what our zkSNARKs would need to prove is that this holds as well as that the updated hashes matches the updated balances.
 
-###Program
+### Program
 
 The main idea is that the sender will use their starting balance and the transaction value as private inputs, and hashes of starting balance, ending balance and value as public inputs. Similarly the receiver will use starting balance and value as secret inputs and hashes of starting balance, ending balance and value as public inputs.
 
@@ -165,7 +165,7 @@ Finally, we can get a json file which contains the proof, verified person can us
     }
 ```
 
-###Solidity Contract Generate
+### Solidity Contract Generate
 
 Using Zokrates, we can generate a verifier, which can be deployed in the Ethereum/Qtum.
 
@@ -175,7 +175,7 @@ zokrates export-verifier
 
 After that, users can find a file named ***verifier.sol*** in the folder. Then we use the [Remix](https://remix.ethereum.org/) to test the verifier contract.
 
-####Paste the code into the Remix
+#### Paste the code into the Remix
 
 <img src="./pic/pic1.png" alt="pic1" style="zoom:50%;" />
 
@@ -197,7 +197,7 @@ If the program execute successfully and return true, means the user is honest an
 
 <img src="./pic/pic5.png" alt="pic5" style="zoom:50%;" />
 
-##About Qtum
+## About Qtum
 
 [Qtum](https://qtum.org/en) is compatible with the Bitcoin- and Ethereum ecosystems and aims at producing a variation of Bitcoin with Ethereum Virtual Machine (EVM) compatibility. 
 
