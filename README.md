@@ -136,7 +136,9 @@ zokrates compile -i sender.code
 zokrates setup
 ```
 
-After that, we can get a circuit used to execute a proof, in this program, we have 5 inputs, so we must input 5 variables. For example, sender has 1000 coins, he wants to transfer to receiver 50 coins, after that sender still has 950 coins, so in this example, we must input 50, 1000, sha256(50), sha256(1000), sha256(950) :
+After that, we can get a circuit used to execute a proof, in this program, we have 5 inputs, so we must input 5 variables. 
+
+For example, sender has 1000 coins, he wants to transfer to receiver 50 coins, after that sender still has 950 coins, so in this example, we must input 50, 1000, sha256(50), sha256(1000), sha256(950) :
 
 ```bash
 # execute the program
