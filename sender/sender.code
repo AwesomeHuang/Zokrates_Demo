@@ -4,7 +4,7 @@ def main(private field value, private field before, field valueHash, field befor
 	priBefore = sha256packed([0, 0, 0, before])
 	priAfter = sha256packed([0, 0, 0, before-value])
     field result = if(\
-    	value > before &&\
+    	value <= before &&\
     	priBefore[0] == beforeHash &&\
     	priAfter[0] == afterHash \
     ) then 1 else 0 fi
