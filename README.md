@@ -246,7 +246,7 @@ Use this function, we can get the return number like **3450bd6a**:
 In order to invoke the contract, we use **callcontract** to get the return number:
 
 ```
-qtum-cli callcontract $CONTRACT 3450bd6a
+qtum-cli callcontract [contract_address] 3450bd6a
 ```
 
 The result of this command after running contains a lot of useful fields, but currently we only need the field **output**, its value represents the check result.
