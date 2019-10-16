@@ -245,7 +245,7 @@ Use this function, we can get the return number like **3450bd6a**:
 
 In order to invoke the contract, we use **callcontract** to get the return number:
 
-```
+```bash
 qtum-cli callcontract [contract_address] 3450bd6a
 ```
 
